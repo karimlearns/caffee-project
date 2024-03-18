@@ -1,0 +1,237 @@
+@import '../config/variables/variables.scss';
+@import '../base/global.scss';
+@import '../base/font.scss';
+@import '../utilities/mixins/mixins.scss';
+
+// Start Header
+.header {
+    height: 100vh;
+}
+
+// Start Navbar
+.my-navbar {
+    background-color: $nav-background;
+    height: 90px !important;
+}
+
+.my-navbar-brand {
+    width: 10%;
+    img {
+        width: 50%;
+        background-color: $white-color;
+    }
+}
+
+.logo {
+    color: $white-color !important;
+}
+
+.my-nav-link {
+    position: relative;
+    &.active {
+        border-bottom: 1px solid $white-color;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: $white-color;
+        transition: $transition-3;
+    }
+    &:hover {
+        &::before {
+            width: 100%;
+        }
+    }
+}
+
+.my-btn {
+        border: none;
+        outline: none;
+        transition: $transition-5;
+        background-color: transparent;
+        color: $white-color;
+        border: 1px solid $white-color;
+        &::placeholder {
+            color: $white-color;
+        }
+    &:focus {
+        box-shadow: 0 0 0 0;
+        border: 1px solid $white-color;
+
+        &::placeholder {
+            color: $nav-background;
+        }
+    }
+}
+
+.my-nav-btn {
+    transition: $transition-5;
+    &:hover {
+        color: $nav-background !important;
+        background-color: $white-color !important;
+    }
+}
+
+.my-navbar-toggler {
+    color: $white-color;
+    background-color: $white-color;
+}
+// End Navbar
+
+// Start carousel
+.home-carousel {
+    height: 100vh;
+    .img-carousel {
+        height: 100vh;
+    }
+}
+// End carousel
+// End Header
+
+// Start Services
+.card-body-home {
+    min-height: 120px !important;
+}
+
+.card-services {
+    width: 24%;
+    margin-bottom: 20px;
+}
+
+.item-card {
+    width: calc((100% / 3) - 10px);
+    margin-bottom: 20px;
+    &:hover {
+        .ellipsis {
+            text-overflow:clip;
+            white-space: wrap;
+        }
+    }
+}
+// Start items
+.products {
+    background-image: url('../images/background-image/background-items.jpg');
+    background-position: top;
+    background-size: cover;
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+// End items
+
+// Start Footer
+.footer {
+    background-color: rgb($nav-background, 0.9);
+}
+.icon {
+    &-facebook, &-twitter, &-google, &-linkedin {
+        font-size: 40px;
+        color: rgb(255, 255, 255, 0.5);
+        transition: $transition-3;
+    }
+    &-facebook:hover {
+        color: #1877f2;
+    }
+    &-twitter:hover {
+        color: #1da1f2;
+    }
+    &-google:hover {
+        color: #db4437;
+    }
+    &-linkedin:hover {
+        color: #1da1f2;
+    }
+}
+
+.btn-email {
+    margin-top: 6px;
+    padding: 6px 20px !important;
+    background-color: transparent;
+    border-color: $white-color;
+    &:hover {
+        background-color: $white-color;
+        color: $nav-background;
+    }
+}
+
+#copyright {
+    background-color: #7A6204 !important;
+}
+// End Footer
+
+// Start Madia
+@media (max-width: 992px) {
+    // Start Navbar
+    .my-navbar-brand img {
+        width: 60%;
+    }
+    .my-collapse {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        background-color: rgb($nav-background, 0.6);
+    }
+
+    // Start Navbar
+    .collapse:not(.show) {
+        display: none !important;
+    }
+    // Start Services
+    .card-services {
+        margin-bottom: 10px;
+    }
+    .item-card {
+        width: calc((100% / 2) - 10px);
+        margin-bottom: 20px;
+    }
+    // End Services
+}
+
+@media (max-width: 1200px) {
+    .card-body-home {
+        min-height: 130px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .my-navbar-brand {
+        width: 10%;
+    }
+
+    .my-navbar-brand {
+        width: 20%;
+        img {
+            width: 40%;
+        }
+    }
+    // Start Services
+    .card-services {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .item-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    // End Services
+    // Start Footer
+    .social-media {
+        display: flex;
+        flex-direction: column;
+    } 
+    // End Footer
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .card-body-home {
+        min-height: 130px !important;
+    }
+}
+
+// End Madia

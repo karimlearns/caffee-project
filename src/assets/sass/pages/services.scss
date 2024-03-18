@@ -1,0 +1,61 @@
+// start main
+.main-mt {
+    padding-top: 90px;
+    height: calc(100vh - 0px);
+    background-image: url(.././images/services-page/bg-service.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .title-services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid #FFF;
+        position: relative;
+        h1 {
+            position: relative;
+            color: white;
+        }
+    }
+    .our-services {
+        img {
+            margin-left: auto !important;
+            margin-right: auto !important;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            margin-bottom: 40px;
+        }
+        .boxes-services {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+            width: 80%;
+            .box-one {
+                padding: 10px !important;
+                .icon-one, .icon-two, .icon-three {
+                    font-size: 60px;
+                    margin-bottom: 20px;
+                }
+                .service {
+                    font-size: 18px;
+                    line-height: 1.8;
+                }
+            }
+        }
+    }
+}
+// End main
+
+// Start Media
+@media (max-width: 1085px) {
+    .icon-one, .icon-two, .icon-three {
+        font-size: 40px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .boxes-services {
+        width: 90% !important;
+    }
+}
+// End Media

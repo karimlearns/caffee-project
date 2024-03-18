@@ -1,0 +1,58 @@
+.my-navbar {
+  background-color: rgb(48, 34, 22);
+}
+
+.my-navbar-brand {
+  width: 5%;
+}
+.my-navbar-brand img {
+  width: 100%;
+  color: #fff;
+}
+
+img[alt=logo] {
+  color: #fff !important;
+}
+
+.my-nav-link {
+  position: relative;
+}
+.my-nav-link::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+.my-nav-link:hover::before {
+  width: 100%;
+}
+
+.my-nav-btn {
+  transition: 0.3s;
+}
+.my-nav-btn:hover {
+  color: #212529 !important;
+  background-color: #fff !important;
+  border-color: #212529 !important;
+  outline: 2px solid #fff !important;
+}
+
+@font-face {
+  font-family: "ArbFONTS-Cairo-Regular";
+  src: local("Cairo"), url("../fonts/ArbFONTS-Cairo-Bold.ttf") format("ttf");
+  font-weight: Bold;
+}
+@font-face {
+  font-family: "ArbFONTS-Cairo-Regular";
+  src: local("Cairo"), url("../fonts/ArbFONTS-Cairo-Light.ttf") format("ttf");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "ArbFONTS-Cairo-Regular";
+  src: local("Cairo"), url("../fonts/ArbFONTS-Cairo-Regular.ttf") format("ttf");
+  font-weight: normal;
+}/*# sourceMappingURL=style.css.map */

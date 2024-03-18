@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة المنتجات</title>
+    <script type="text/html" src="(require('./index.js'))"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header-product background-product layer position-relative">
+        <nav class="navbar navbar-expand-lg my-navbar fixed-top">
+            <div class="container-fluid px-0">
+                <a class="navbar-brand my-navbar-brand ms-3" href="index.html">
+                    <img src="./assets/images/logo-noun-coffee.png" alt="logo" class="logo">
+                </a>
+                <button class="navbar-toggler my-navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bars-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-between flex-column flex-sm-row my-collapse px-3" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0">
+                        <li class="nav-item py-2 px-lg-2 px-0 my-nav-item">
+                            <a class="nav-link text-white my-nav-link" aria-current="page" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item py-2 px-lg-2 px-0 my-nav-item">
+                            <a class="nav-link text-white my-nav-link active" href="products.html">المنتجات</a>
+                        </li>
+                        <li class="nav-item py-2 px-lg-2 px-0 my-nav-item">
+                            <a class="nav-link text-white my-nav-link" aria-disabled="true" href="distributors.html">الموزعين</a>
+                        </li>
+                        <li class="nav-item py-2 px-lg-2 px-0 my-nav-item">
+                            <a class="nav-link text-white my-nav-link" aria-disabled="true" href="about-us.html">عن الشركة</a>
+                        </li>
+                        <li class="nav-item py-2 px-lg-2 px-0 my-nav-item">
+                            <a class="nav-link text-white my-nav-link" aria-disabled="true" href="contact.html">إتصل بنا</a>
+                        </li>
+                        <li class="nav-item py-2 px-lg-2 px-0 my-nav-item">
+                            <a class="nav-link text-white my-nav-link" aria-disabled="true" href="services.html">الخدمات</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 my-btn" type="search" placeholder="إبحث" aria-label="Search">
+                        <button class="btn btn-outline-success text-white px-4 border-light my-nav-btn" type="submit">إبحث</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <h1 class="main-title">القهوة المثالية</h1>
+        <img src="./assets/images/product-page/background-title.png" alt="background-title" class="background-title">
+        <div class="products-head">
+            <div class="prod-1">
+                <img src="./assets/images/header/product-2.png" alt="" class="img-product-1">
+                <h2 class="products-names-1">الكابوتشينو</h2>
+            </div>
+            <div class="prod-2">
+                <img src="./assets/images/header/product-1.png" alt="" class="img-product-2">
+                <h2 class="products-names-2">القهوة السوداء</h2>
+            </div>
+            <div class="prod-3">
+                <img src="./assets/images/header/product-3.png" alt="" class="img-product-3">
+                <h2 class="products-names-3">القهوة التركية</h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="our-products-page py-5">
+            <h2 class="text-center mb-5">منتجاتنا</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="pannel">
+                            <div class="carousel slide box-product" data-bs-ride="carousel" id="carousel-brand-adidas">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active pt-1 pb-2 px-2">
+                                        <div class="row">
+                                            <a class="btn rounded" href="cappuccino.html" target="_blank">
+                                                <div class="text-center">
+                                                    <img src="./assets/images/product-1/cappoccino-1.jpg" alt="lacoste" class="w-100 mb-2">
+                                                </div>
+                                                <div class="">
+                                                    <div class="clearfix">
+                                                        <h4 class="float-start">
+                                                            الكابوتشينو
+                                                        </h4>
+                                                        <div class="rating float-end">
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-muted"></i>
+                                                            <i class="fas fa-star text-muted"></i>
+                                                        </div>
+                                                    </div>
+                                                    <p class="text-start text-muted product_descption">
+                                                        الكابتشينو (بالإيطالية: Cappuccino) هو نوع من أنواع القهوة التي يمزج معها الحليب وقد اخترعها الإيطاليون.
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item pt-1 pb-2 px-2">
+                                        <div class="row">
+                                            <a class="btn product-link" href="cappuccino.html" target="_blank">
+                                                <div class="text-center">
+                                                    <img src="./assets/images/product-1/cappoccino-2.jpg" alt="adidas" class="w-100 mb-2">
+                                                </div>
+                                                <div class="">
+                                                    <div class="clearfix">
+                                                        <h4 class="float-start">
+                                                            الكابوتشينو
+                                                        </h4>
+                                                        <div class="rating float-end">
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-muted"></i>
+                                                        </div>
+                                                    </div>
+                                                    <p class="text-start text-muted product_descption">
+                                                        تقدم الكابوتشينو في أكواب كبيرة، وتُزين أحيانا ببودرة الكاكاو ويقدم معها السكر. 
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item pt-1 pb-2 px-2">
+                                        <div class="row">
+                                            <a class="btn product-link" href="cappuccino.html" target="_blank">
+                                                <div class="text-center">
+                                                    <img src="./assets/images/product-1/cappoccino-3.jpg" alt="adidas" class="w-100 mb-2">
+                                                </div>
+                                                <div class="">
+                                                    <div class="clearfix">
+                                                        <h4 class="float-start">
+                                                            الكابوتشينو
+                                                        </h4>
+                                                        <div class="rating float-end">
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-muted"></i>
+                                                            <i class="fas fa-star text-muted"></i>
+                                                            <i class="fas fa-star text-muted"></i>
+                                                        </div>
+                                                    </div>
+                                                    <p class="text-start text-muted product_descption">
+                                                        الكابتشينو غني بالسعرات الحرارية إذ إن كل كوب يحتوي على 300 سعرات حرارية تقريباً.
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="clearfix">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="btn arrow-btn" data-bs-target="#carousel-brand-adidas" data-bs-slide="prev">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </button>
+                                            <button class="btn arrow-btn" data-bs-target="#carousel-brand-adidas" data-bs-slide="next">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-center mx-auto">
+                            <a class="btn btn-body btn-size mt-4" href="cappuccino.html" target="_blank">تصفح المنتج</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="pannel">
+                            <div id="carousel-brand-puma" class="carousel slide box-product" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active pt-1 pb-2 px-2">
+                                        <div class="row">
+                                            <a class="btn product-link" href="black-caffee.html" target="_blank">
+                                                <div class="text-center">
+                                                    <img src="./assets/images/product-2/caffee-1.jpg" alt="puma" class="w-100 mb-2">
+                                                </div>
+                                                <div class="">
+                                                    <div class="clearfix">
+                                                        <h4 class="float-start">
+                                                            القهوة
+                                                        </h4>
+                                                        <div class="rating float-end">
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-muted"></i>
+                                                        </div>
+                                                    </div>
+                                                    <p class="text-start text-muted product_descption">
+                                                        القهوة مشروب يعد من بذور البن المحمصة، وينمو في أكثر من 70 بلداً.
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item pt-1 pb-2 px-2">
+                                        <div class="row">
+                                            <a class="btn product-link" href="black-caffee.html" target="_blank">
+                                                <div class="text-center">
+                                                    <img src="./assets/images/product-2/caffee-2.jpg" alt="puma" class="w-100 mb-2">
+                                                </div>
+                                                <div class="">
+                                                    <div class="clearfix">
+                                                        <h4 class="float-start">القهوة</h4>
+                                                        <div class="rating float-end">
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-muted"></i>
+                                                            <i class="fas fa-star text-muted"></i>
+                                                        </div>
+                                                    </div>
+                                                    <p class="text-start text-muted product_descption">
+                                                        .نظراً لاحتواء القهوة على الكافيين، يمكن أن يكون لها تأثيراً منبهاً للبشر.
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item pt-1 pb-2 px-2">
+                                        <div class="row">
+                                            <a class="btn product-link" href="black-caffee.html" target="_blank">
+                                                <div class="text-center">
+                                                    <img src="./assets/images/product-2/caffee-3.jpg" alt="puma" class="w-100 mb-2">
+                                                </div>
+                                                <div class="">
+                                                    <div class="clearfix">
+                                                        <h4 class="float-start">
+                                                            القهوة
+                                                        </h4>
+                                                        <div class="rating float-end">
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-muted"></i>
+                                                            <i class="fas fa-star text-muted"></i>
+                                                            <i class="fas fa-star text-muted"></i>
+                                                        </div>
+                                                    </div>
+                                                    <p class="text-start text-muted product_descption">
+                                                        تعتبر القهوة اليوم واحدة من المشروبات الأكثر شعبية في جميع أنحاء العالم.
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="clearfix">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="btn arrow-btn" data-bs-target="#carousel-brand-puma" data-bs-slide="prev">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </button>
+                                            <button class="btn arrow-btn" data-bs-target="#carousel-brand-puma" data-bs-slide="next">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-center mx-auto">
+                            <a class="btn btn-body btn-size mt-4" href="black-caffee.html" target="_blank">تصفح المنتج</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="pannel">
+                            <div id="carousel-brand-polo" class="carousel slide box-product" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active pt-1 pb-2 px-2">
+                                        <div class="row">
+                                            <a class="btn product-link" href="turkish-coffee.html" target="_blank">
+                                                <div class="text-center">
+                                                    <img src="./assets/images/product-3/turkish-caffee-1.jpg" alt="polo" class="w-100 mb-2">
+                                                </div>
+                                                <div class="">
+                                                    <div class="clearfix">
+                                                        <h4 class="float-start">
+                                                            القهوة التركية
+                                                        </h4>
+                                                        <div class="rating float-end">
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-muted"></i>
+                                                        </div>
+                                                    </div>
+                                                    <p class="text-start text-muted product_descption">
+                                                        القهوة التركية هو نوع من القهوة تُعد باستخدام حبوب البن المطحونة بدقة شديدة دون تصفية.
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item pt-1 pb-2 px-2">
+                                        <div class="row">
+                                            <a class="btn product-link" href="turkish-coffee.html" target="_blank">
+                                                <div class="text-center">
+                                                    <img src="./assets/images/product-3/turkish-caffee-2.jpg" alt="polo" class="w-100 mb-2">
+                                                </div>
+                                                <div class="">
+                                                    <div class="clearfix">
+                                                        <h4 class="float-start">
+                                                            القهوة التركية
+                                                        </h4>
+                                                        <div class="rating float-end">
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-muted"></i>
+                                                            <i class="fas fa-star text-muted"></i>
+                                                        </div>
+                                                    </div>
+                                                    <p class="text-start text-muted product_descption">
+                                                        تشير القهوة التركية إلى طريقة لتخمير البن المطحون جيدًا، تعتبر أصناف أرابيكا هي الأفضل.
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item pt-1 pb-2 px-2">
+                                        <div class="row">
+                                            <a class="btn product-link" href="turkish-coffee.html" target="_blank">
+                                                <div class="text-center">
+                                                    <img src="./assets/images/product-3/turkish-caffee-3.jpg" alt="polo" class="w-100 mb-2">
+                                                </div>
+                                                <div class="">
+                                                    <div class="clearfix">
+                                                        <h4 class="float-start">
+                                                            القهوة التركية
+                                                        </h4>
+                                                        <div class="rating float-end">
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-warning"></i>
+                                                            <i class="fas fa-star text-muted"></i>
+                                                            <i class="fas fa-star text-muted"></i>
+                                                            <i class="fas fa-star text-muted"></i>
+                                                        </div>
+                                                    </div>
+                                                    <p class="text-muted text-start product_descption">
+                                                        تعتبر أصناف أرابيكا هي الأفضل، ولكن يتم أيضًا استخدام روبوستا أو مزيج منهما.
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="clearfix">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="btn arrow-btn" data-bs-target="#carousel-brand-polo" data-bs-slide="prev">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </button>
+                                            <button class="btn arrow-btn" data-bs-target="#carousel-brand-polo" data-bs-slide="next">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-center mx-auto">
+                            <a class="btn btn-body btn-size mt-4" href="turkish-coffee.html" target="_blank">تصفح المنتج</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services similar-product py-5">
+            <div class="container">
+                <h2 class="text-center mx-auto mb-5">منتجات مشابهة</h2>
+                <div class="row justify-content-between">
+                    <div class="card col-md-4 col-lg-3 p-1 item-card">
+                        <img src="./assets/images/product-page/similar-product/latte-caffee.jpg" class="card-img-top" alt="">
+                        <div class="card-body px-1 pb-2">
+                            <h5 class="card-title">قهوة اللاتيه</h5>
+                            <p class="card-text text-muted product_descption caffee-desc">.هي القهوة بالحليب التي نشأت في إيطاليا، تقدم مع طبقة ناعمة من الرغوة وهذا مايجعلها شبيهة بالكابتشينو</p>
+                        </div>
+                    </div>
+                    <div class="card col-md-4 col-lg-3 p-1 item-card">
+                        <img src="./assets/images/product-page/similar-product/american-caffee.jpg" class="card-img-top" alt="">
+                        <div class="card-body px-1 pb-2">
+                            <h5 class="card-title">قهوة الامريكانو</h5>
+                            <p class="card-text text-muted product_descption caffee-desc">.القهوة الأمريكية هي إحدى أنواع القهوة إلا أن الفرق بينها وبين القهوة الاعتيادية هي نسبة الكافيين</p>
+                        </div>
+                    </div>
+                    <div class="card col-md-4 col-lg-3 p-1 item-card">
+                        <img src="./assets/images/product-page/similar-product/lungo-caffee.jpg" class="card-img-top" alt="">
+                        <div class="card-body px-1 pb-2">
+                            <h5 class="card-title">قهوة لونجو</h5>
+                            <p class="card-text text-muted product_descption caffee-desc">تستطيع تحضير لونغو بسهولة باستخدام بعض أنواع مكائن تحضير الاسبريسو المنزلية، ووفرت نسبريسو كبسولات خاصة لقهوة لونغو.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer d-flex align-items-center py-5">
+            <div class="container d-flex justify-content-between align-items-center py-5">
+                <div class="social-media">
+                    <a href="https://www.facebook.com/" class="pe-1"><i class="fa-brands fa-square-facebook icon-facebook"></i></a>
+                    <a href="nstagram.com" class="pe-1"><i class="fa-brands fa-square-twitter icon-twitter"></i></a>
+                    <a href="https://twitter.com/?lang=fr" class="pe-1"><i class="fa-brands fa-square-google-plus icon-google"></i></a>
+                    <a href="https://www.linkedin.com/home?originalSubdomain=fr" class=""><i class="fa-brands fa-linkedin icon-linkedin"></i></a>
+                </div>
+                <form class="d-flex email-subscribe align-items-center row g-3 needs-validation" novalidate>
+                    <div class="">
+                        <label for="validationCustom05" class="form-label text-white">إشترك بالرسائل البريدية</label>
+                        <input type="email" class="form-control my-btn" id="validationCustom05" required>
+                        <div class="invalid-feedback">
+                            عذرًا يرجى إدخال البريد الإلكترونة
+                        </div>
+                    </div>
+                    <div class="">
+                        <button class="btn btn-primary p-0 btn-email d-flex my-nav-btn" type="submit">إرسال</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="copyright" class="text-white text-center py-4">
+            جميع الحقوق محفوظة سنة <span class="thisYear"></span>
+        </div>
+    </footer>
+
+</body>
+</html>

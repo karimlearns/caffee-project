@@ -1,0 +1,6 @@
+// Start Each Product has color
+@mixin color-pages($text-color, $bg-color) {
+    background-color: $bg-color;
+    color: $text-color;
+}
+// End Each Product has color

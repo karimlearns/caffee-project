@@ -1,0 +1,71 @@
+// Start Header
+// layer
+.layer {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// title-distributors
+.title-distributors {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .title {
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .title-description {
+        font-size: 30px;
+    }
+}
+
+// End Header
+
+// Start distributors Sites
+.section-title-modify {
+    width: fit-content !important;
+}
+
+.site-card, .map{
+    height: 250px;
+    transition: $transition-5;
+    &:hover {
+        height: 450px;
+        .map {
+            height: 450px;
+        }
+    }
+}
+// Start distributors Sites
+
+// Start distributors Info
+
+.info {
+    background-image: url(.././images/background-image/bg-info.jpg);
+}
+
+.card-info {
+    height: fit-content !important;
+}
+
+.title-info-fistributors {
+    background-color: darkgoldenrod;
+    border: 1px solid #fff;
+    color: #fff;
+    outline: 1px solid #b8860b;
+}
+
+.bg-card-info {
+    background-color: #ffffe08c;
+}
+
+// End distributors Info

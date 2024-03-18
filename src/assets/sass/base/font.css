@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "ArbFONTS-Cairo-Regular";
+  src: local("Cairo"), url("../fonts/ArbFONTS-Cairo-Bold.ttf") format("ttf");
+  font-weight: Bold;
+}
+@font-face {
+  font-family: "ArbFONTS-Cairo-Regular";
+  src: local("Cairo"), url("../fonts/ArbFONTS-Cairo-Light.ttf") format("ttf");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "ArbFONTS-Cairo-Regular";
+  src: local("Cairo"), url("../fonts/ArbFONTS-Cairo-Regular.ttf") format("ttf");
+  font-weight: normal;
+}/*# sourceMappingURL=font.css.map */

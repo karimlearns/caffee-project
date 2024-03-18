@@ -1,0 +1,171 @@
+// Start header
+.background-contact {
+    background-image: url(.././images/contact-us/contact-us.jpg);
+    background-size: cover;
+    background-position: center;
+}
+// End header
+// Start icons
+.contact-icons {
+    transition: $transition-5;
+    &:hover {
+        background-color: #ffffff12 !important;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        padding: 20px !important;
+        .link-media {
+            display: block !important;
+            transition: $transition-5 !important;
+            width: 100%;
+        }
+    }
+    .icon-linkedin-cont {
+        .linked-contact {
+            color: $linkedin-color;
+        }
+    }
+    .linked-link {
+        background-color: $linkedin-color;
+        margin-right: 10px;
+    }
+
+    .icon-instagram-cont {
+        .instagram-contact {
+            color: $instagram-color;
+        }
+    }  
+    .insta {
+        background-color: $instagram-color;
+        margin-right: 10px;
+    }
+
+    .icon-twitter-cont {
+        .twitter-contact {
+            color: $twitter-color;
+        }
+    }
+    .twitter {
+        background-color: $twitter-color;
+        margin-right: 10px;
+    }
+
+    .icon-google-plus-cont {
+        .google-contact {
+            color: $google-color;
+        }
+    }
+    .google-plus {
+        background-color: $google-color;
+        margin-right: 10px;
+    }
+
+    .triangle-right {
+        position: relative;
+        &::after {
+            background-color: transparent;
+            border: 7px solid transparent;
+            border-left-color: $google-color;
+            content: "";
+            height: 0;
+            position: absolute;
+            right: -29px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+        }
+        &.flesh-linked::after {
+            border-left-color: $linkedin-color;
+        }
+        &.flesh-instagram::after {
+            border-left-color: $instagram-color;
+            right: -22px !important;
+        }
+        &.flesh-twitter::after {
+            border-left-color: $twitter-color;
+        }
+        &.flesh-google::after {
+            border-left-color: $google-color;
+            right: -18px;
+        }
+    }
+}
+// End icons
+// Start form
+
+.send-message {
+    background-color: #fff;
+    padding: 10px;
+    width: 80%;
+    font-size: 20px;
+    margin: -10px auto;
+    z-index: 1000;
+}
+.form-contact {
+    background-color: hsla(0, 0%, 100%, .071) !important;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.4), 0 7px 13px -3px rgba(0,0,0,.3), inset 0 -3px 0 rgba(0,0,0,.2);
+    padding: 20px !important;
+}
+
+.inputs-contact {
+    .name-input, .email-input, .tel-input, .subject-input {
+        padding: 10px;
+        &::placeholder {
+            text-align: right;
+        }
+    }
+    .contact-info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 300px !important;
+        padding: 20px 0;
+        .info-contact {
+            background-color: goldenrod;
+            border-radius: 6px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+    }
+    .contact-us {
+        position: relative;
+        .form-inputs {
+            margin: -300px auto;
+        }
+    }
+}
+
+.msg-text-area {
+    textarea {
+        height: 90% !important;
+    }
+}
+// End form
+// Start Responsive
+@media (max-width: 992px) {
+    .msg-text-area {
+        margin-top: 10px !important;
+    }
+    .msg {
+        width: 100% !important;
+    }
+    .btn-contact {
+        margin-top: 30px !important;
+    }
+    .contact-info {
+        margin-top: 100px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .btn-contact {
+        margin-top: 10px !important;
+    }
+    .contact-icons:hover {
+        padding-right: 0px !important;
+        .link-media {
+            opacity: 0 !important;
+        }
+    }
+    
+}
+// End Responsive

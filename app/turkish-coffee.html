@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القهوة التركية</title>
+    <script type="text/html" src="(require('./index.js'))"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+<script defer src="app.js"></script></head>
+<body>
+    <header class="position-relative header-cappuccino">
+        <nav class="navbar navbar-expand-lg my-navbar fixed-top">
+            <div class="container-fluid px-0">
+                <a class="navbar-brand my-navbar-brand ms-3" href="index.html">
+                    <img src="./images/logo-noun-coffee.png" alt="logo" class="logo">
+                </a>
+                <button class="navbar-toggler my-navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bars-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-between flex-column flex-sm-row my-collapse px-3" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0">
+                        <li class="nav-item py-2 px-lg-2 px-0 my-nav-item">
+                            <a class="nav-link text-white my-nav-link" aria-current="page" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item py-2 px-lg-2 px-0 my-nav-item">
+                            <a class="nav-link text-white my-nav-link active" href="products.html">المنتجات</a>
+                        </li>
+                        <li class="nav-item py-2 px-lg-2 px-0 my-nav-item">
+                            <a class="nav-link text-white my-nav-link" aria-disabled="true" href="distributors.html">الموزعين</a>
+                        </li>
+                        <li class="nav-item py-2 px-lg-2 px-0 my-nav-item">
+                            <a class="nav-link text-white my-nav-link" aria-disabled="true" href="about-us.html">عن الشركة</a>
+                        </li>
+                        <li class="nav-item py-2 px-lg-2 px-0 my-nav-item">
+                            <a class="nav-link text-white my-nav-link" aria-disabled="true" href="contact.html">إتصل بنا</a>
+                        </li>
+                        <li class="nav-item py-2 px-lg-2 px-0 my-nav-item">
+                            <a class="nav-link text-white my-nav-link" aria-disabled="true" href="services.html">الخدمات</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 my-btn" type="search" placeholder="إبحث" aria-label="Search">
+                        <button class="btn btn-outline-success text-white px-4 border-light my-nav-btn" type="submit">إبحث</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="product-cap">
+            <!-- Start Overview -->
+            <div class="container">
+                <div class="row" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+                    <ol class="breadcrumb custom-breadcrumb pt-4 pb-3">
+                        <li class="breadcrumb-item">
+                            <a href="./index.html" class="text-dark">الصفحة الرئيسية</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="turkish-coffee.html" class="text-black-50 active" target="_blank">القهوة التركية</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- End Overview -->
+            <!-- Start -->
+            <div class="container cappuccino borders-between turkish-mixin-color">
+                <!-- Start images and details of item -->
+                <div class="row product-images px-2 px-lg-0 py-2">
+                    <div class="col-lg-5 col-md-9 offset-md-2 offset-lg-1 box me-2 py-2">
+                        <div id="carousel-product-images" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/turkish-caffee-1.jpg" alt="turkish-caffee" class="w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/turkish-caffee-2.jpg" alt="turkish-caffee" class="w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/turkish-caffee-3.jpg" alt="turkish-caffee" class="w-100">
+                                </div>
+                            </div>
+                            <div class="carousel-indicators custom-carousel-indicators">
+                                <img src="./images/turkish-caffee-1.jpg" class="custom-carousel-indicators-primary active" alt="black-caffee" data-bs-target="#carousel-product-images" data-bs-slide-to="0">
+                                <img src="./images/turkish-caffee-2.jpg" class="custom-carousel-indicators-primary" alt="black-caffee" data-bs-target="#carousel-product-images" data-bs-slide-to="1">
+                                <img src="./images/turkish-caffee-3.jpg" class="custom-carousel-indicators-primary" alt="black-caffee" data-bs-target="#carousel-product-images" data-bs-slide-to="2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 info-cappo box py-2">
+                        <form action="" id="form-product-selection" class="borders-between">
+                            <div class="row">
+                                <div class="clearfix">
+                                    <h2 class="float-start">القهوة التركية</h2>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <p class="product-description text-muted">
+                                    القهوة التركية هو نوع من القهوة تُعد باستخدام حبوب البن المطحونة بدقة شديدة دون تصفية. تشير القهوة التركية إلى طريقة لتخمير البن المطحون جيدًا. 
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="product-quantity">
+                                <div>
+                                    العدد المطلوب:
+                                    <select name="quantity" class="custom-form-control">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="large"><span class="me-2">الثمن:</span><span>12$</span></div>
+                            <hr>
+                        </form>
+                        <div class="row brand-and-rating align-items-center">
+                            <div class="col-6">
+                                <button type="submit" class="btn add-to-card-btn custom-btn-warning custom-btn-with-icon border-white turkish-mixin-color">
+                                    <span class="d-flex align-items-center text-nowrap">
+                                        إضافة لعربة الشراء
+                                        <i class="fas fa-cart-plus ms-1"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <div class="rating float-end">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-muted"></i>
+                                    <i class="fas fa-star text-muted"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End -->
+        </section>
+        <div class="container"><hr class="mt-0 d-none d-lg-block"></div>
+        <!-- Start description product -->
+        <section class="container">
+            <div class="row">
+                <div class="more-description col-lg-7">
+                    <h3 class="heading heading-with-border-bottom heading-inline">معلومات عن القهوة السوداء</h3>
+                    <hr>
+                    <p class="text-muted">
+                        القهوة التركية هو نوع من القهوة تُعد باستخدام حبوب البن المطحونة بدقة شديدة دون تصفية. تشير القهوة التركية إلى طريقة لتخمير البن المطحون جيدًا. تعتبر أصناف أرابيكا هي الأفضل، ولكن يتم أيضًا استخدام روبوستا أو مزيج منهما.
+                    </p>
+                    <hr>
+                    <p class="text-muted">
+                        تطحن الحبوب إلى مسحوق ناعم جدًا، والذي يترك في القهوة عند تقديمه. على الرغم من أن كلمة قهوة ذات أصل عربي، إلا أن ثقافة المقاهي قد ظهرت أيام الدولة العثمانية حينما كانت هذه هي الطريقة الرائجة لتحضير القهوة.
+                    <p>
+                </div>
+            </div>
+            <hr>
+        </section>
+        <!-- End description product -->
+        <!-- Start Comments -->
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-8 mt-2">
+                    <div class="comments">
+                        <h2 class="mb-3">تقييمات المستخدمين</h2>
+                        <div class="public-comments">
+                            <div class="form-group">
+                                <textarea class="form-control textarea-comment" id="exampleFormControlTextarea1" rows="4" placeholder="إضافة تعليق"></textarea>
+                                <button type="submit" class="btn mt-3 btn-cappuccino mb-1">تعليق</button>
+                                <div class="my-card-cont card mt-1 mb-2">
+                                    <div class="my-card-body card-body">
+                                        <div class="row me-0">
+                                            <div class="my-profile col-md-2 d-flex flex-column align-items-center">
+                                                <img src="./images/profile-1.png" class="img-fluid"/>
+                                                <p class="my-name text-center"><strong class="text-nowrap">أشرف خالد</strong></p>
+                                            </div>
+                                            <div class="my-com col-md-10">
+                                                <div>
+                                                    <span class="float-end"><i class="text-black-50 fa fa-star"></i></span>
+                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <p class="my-comment">
+                                                    القهوة التركية هي الأفضل بالنسبة لي.
+                                                    <br>
+                                                    <small class="my-time mt-3 mt-md-4 rounded">منذ 5 ساعات</small>
+                                                </p>
+                                                <p>
+                                                    <a class="btn-cappuccino float-start btn me-2"><i class="fa fa-heart pe-1"></i>أعجبني</a>
+                                                    <a class="btn-cappuccino float-start btn"><i class="fa fa-reply pe-1"></i>ردود</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-card-cont card mt-1 mb-2">
+                                    <div class="my-card-body card-body">
+                                        <div class="row me-0">
+                                            <div class="my-profile col-md-2 d-flex flex-column align-items-center">
+                                                <img src="./images/profile-2.png" class="img-fluid"/>
+                                                <p class="my-name text-center"><strong class="text-nowrap">فاطمة سعيد</strong></p>
+                                            </div>
+                                            <div class="my-com col-md-10">
+                                                <p>
+                                                    <span class="float-end"><i class="text-black-50 fa fa-star"></i></span>
+                                                    <span class="float-end"><i class="text-black-50 fa fa-star"></i></span>
+                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                </p>
+                                                <div class="clearfix"></div>
+                                                <p class="my-comment">
+                                                    قهوة لذيذة لكني أفضل الكابوتشينو.
+                                                    <br><small class="my-time mt-3 mt-md-4 rounded">منذ 4 أيام</small>
+                                                </p>
+                                                <p>
+                                                    <a class="btn-cappuccino float-start btn me-2"><i class="fa fa-heart pe-1"></i>أعجبني</a>
+                                                    <a class="btn-cappuccino float-start btn"><i class="fa fa-reply pe-1"></i>ردود</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-card-cont card mt-1 mb-2">
+                                    <div class="my-card-body card-body">
+                                        <div class="row me-0">
+                                            <div class="my-profile col-md-2 d-flex flex-column align-items-center">
+                                                <img src="./images/profile-3.png" class="img-fluid"/>
+                                                <p class="my-name text-center"><strong class="text-nowrap">كريم محمد</strong></p>
+                                            </div>
+                                            <div class="my-com col-md-10">
+                                                <p>
+                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                </p>
+                                                <div class="clearfix"></div>
+                                                <p class="my-comment">
+                                                    القهوة المفضلة لدي.
+                                                    <br><small class="my-time mt-3 mt-md-4 rounded">منذ 5 أيام</small>
+                                                </p>
+                                                <p>
+                                                    <a class="btn-cappuccino float-start btn me-2"><i class="fa fa-heart pe-1"></i>أعجبني</a>
+                                                    <a class="btn-cappuccino float-start btn"><i class="fa fa-reply pe-1"></i>ردود</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-card-cont card mt-1 mb-2">
+                                    <div class="my-card-body card-body">
+                                        <div class="row me-0">
+                                            <div class="my-profile col-md-2 d-flex flex-column align-items-center">
+                                                <img src="./images/profile-4.png" class="img-fluid"/>
+                                                <p class="my-name text-center"><strong class="text-nowrap">كريم محمد</strong></p>
+                                            </div>
+                                            <div class="my-com col-md-10">
+                                                <p>
+                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                </p>
+                                                <div class="clearfix"></div>
+                                                <p class="my-comment">
+                                                    القهوة المفضلة لدي.
+                                                    <br><small class="my-time mt-3 mt-md-4 rounded">منذ 5 أيام</small>
+                                                </p>
+                                                <p>
+                                                    <a class="btn-cappuccino float-start btn me-2"><i class="fa fa-heart pe-1"></i>أعجبني</a>
+                                                    <a class="btn-cappuccino float-start btn"><i class="fa fa-reply pe-1"></i>ردود</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-2">
+                    <h2 class="mb-3 mt-2 mt-auto">منتجات أخرى</h2>
+                    <div class="card p-1 mb-4">
+                        <img src="./images/caffee.jpg" class="card-img-top" alt="">
+                        <div class="card-body list-group list-group-flush px-3">
+                            <h5 class="card-title">القهوة السوداء</h5>
+                            <p class="card-text">القهوة مشروب يعد من بذور البن المحمصة، وينمو في أكثر من 70 بلداً.</p>
+                        </div>
+                        <div class="card-body px-0 d-flex justify-content-center align-items-center">
+                            <a href="black-caffee.html" target="_blank" class="card-link px-auto rounded link">القهوة السوداء</a>
+                        </div>
+                    </div>
+                    <div class="card p-1 mb-4">
+                        <img src="./images/cappocino.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">الكابتشينو</h5>
+                            <p class="card-text">الكابتشينو (بالإيطالية: Cappuccino) هو نوع من أنواع القهوة التي يمزج معها الحليب وقد اخترعها الإيطاليون.</p>
+                        </div>
+                        <div class="card-body list-group list-group-flush d-flex justify-content-center align-items-center">
+                            <a href="cappuccino.html" target="_blank" class="card-link px-auto rounded link">الكابتشينو</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Start Comments -->
+    </main>
+    <footer>
+        <div class="footer d-flex align-items-center py-5">
+            <div class="container d-flex justify-content-between align-items-center py-5">
+                <div class="social-media">
+                    <a href="https://www.facebook.com/" class="pe-1"><i class="fa-brands fa-square-facebook icon-facebook"></i></a>
+                    <a href="nstagram.com" class="pe-1"><i class="fa-brands fa-square-twitter icon-twitter"></i></a>
+                    <a href="https://twitter.com/?lang=fr" class="pe-1"><i class="fa-brands fa-square-google-plus icon-google"></i></a>
+                    <a href="https://www.linkedin.com/home?originalSubdomain=fr" class=""><i class="fa-brands fa-linkedin icon-linkedin"></i></a>
+                </div>
+                <form class="d-flex email-subscribe align-items-center row g-3 needs-validation" novalidate>
+                    <div class="">
+                        <label for="validationCustom05" class="form-label text-white">إشترك بالرسائل البريدية</label>
+                        <input type="email" class="form-control my-btn" id="validationCustom05" required>
+                        <div class="invalid-feedback">
+                            عذرًا يرجى إدخال البريد الإلكترونة
+                        </div>
+                    </div>
+                    <div class="">
+                        <button class="btn btn-primary p-0 btn-email d-flex my-nav-btn" type="submit">إرسال</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="copyright" class="text-white text-center py-4">
+            جميع الحقوق محفوظة سنة <span class="thisYear"></span>
+        </div>
+    </footer>
+
+</body>
+</html>

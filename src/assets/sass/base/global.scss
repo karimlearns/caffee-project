@@ -1,0 +1,39 @@
+@import '../config/variables/variables.scss';
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.link {
+    background-color: $nav-background;
+    color: $white-color;
+    padding: 10px 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+input, textarea {
+    outline: none;
+}
+
+.btn-body {
+    background-color: darkgoldenrod;
+    border: 1px solid darkgoldenrod;
+    color: #fff;
+    &:hover {
+        background-color: darkgoldenrod;
+        border: 2px solid #fff;
+        outline: 1px solid #b8860b;
+    }
+
+    &:active {
+        background-color: transparent !important;
+        border-color: darkgoldenrod !important;
+    }
+}

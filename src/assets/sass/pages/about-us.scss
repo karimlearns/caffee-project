@@ -1,0 +1,128 @@
+// Start Header
+
+
+.founders {
+    height: calc(100vh);
+    background-image: url(.././images/abou-us/bg-about-us.avif);
+    position: relative;
+    &::before {
+        background-color: rgba(0, 0, 0, .7);
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .bg-about-us {
+        height: calc(100vh);
+        width: 100%;
+    }
+    // .container {
+        .title-about-us {
+            position: absolute;
+            left: 50%;
+            top: 25%;
+            transform: translate(-50%, -25%);
+            z-index: 1;
+            color: #fff;
+        }
+        .founders-image {
+            left: 50%;
+            position: absolute;
+            top: 100%;
+            transform: translate(-50%, -100%);
+        }
+    // }
+}
+
+// Start main
+// Start how we are
+main {
+    .how-are-we, .our-products {
+        position: relative;
+        &::before {
+            align-items: center;
+            background-color: rgba(239, 108, 0, .369);
+            color: #fff;
+            content: "";
+            display: flex;
+            font-size: 40px;
+            height: 50%;
+            justify-content: flex-start;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            z-index: 65;
+        }
+        .title-cont {
+            background-color: bisque;
+            position: relative;
+            .title-how-we-are {
+                font-size: 40px;
+                color:chocolate;
+                font-weight: bold;
+                position: absolute;
+                z-index: 70;
+                color: $white-color;
+            }
+        }
+    
+        .description-cont {
+            .para-how-we-are {
+                line-height: 2.8;
+                font-size: 17px;
+                text-align: justify;
+            }
+        }
+    }
+
+    // End How We Are Section
+
+    // Start Our Product Section
+
+    .our-products {
+        position: relative;
+        &::before {
+            content: "منتجاتنا" !important;
+            display: flex;
+            justify-content: center;
+        }
+        .card-cafe, .card-turkish .card-cappoccino {
+            background-color: #000;
+            color: $white-color;
+            outline: 3px solid #000;
+            border: 1px solid $white-color;
+        }
+    }
+    // End Our Product Section
+}
+// End Main
+
+// Start Responsive
+@media ((min-width: 767px) and (max-width: 992px)) {
+    .how-are-we, .our-products {
+        &::before {
+            height: 70% !important;
+        }
+    }
+
+    .founders-image {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .how-are-we, .our-products {
+        &::before {
+            height: 80% !important;
+        }
+    }
+
+    .founders-image {
+        width: 100% !important;
+    }
+}
+// End Responsive
