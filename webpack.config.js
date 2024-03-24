@@ -1,10 +1,14 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
+    mode: 'production',
     entry: {
         app: './src/index.js'
     },
@@ -76,6 +80,15 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
 
+        new CopyPlugin({
+            patterns: [
+                {
+                    context: path.resolve(__dirname, "app"),
+                    from: "./*.html", to: "app",
+                },
+            ],
+        }),
+
         new MiniCssExtractPlugin({
             filename: "assets/css/style.css"
         }),
@@ -121,4 +134,19 @@ module.exports = {
 
         new CssMinimizerPlugin({})
     ],
+
+    optimization: {
+        minimize: true,
+        minimizer: [
+            new TerserPlugin({
+                exclude: /node_modules/,
+            }),
+            new CssMinimizerPlugin(),
+            new HtmlMinimizerPlugin({
+                minimizerOptions: {
+                    collapseWhitespace: true,
+                }
+            }),
+        ],
+    },
 }
