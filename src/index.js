@@ -1,6 +1,6 @@
 window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle');
 window.bootstrap = require('jquery/dist/jquery.min.js');
-import('./assets/sass/style.scss');
+import './assets/sass/style.scss';
 import '@fortawesome/fontawesome-free/js/all.min.js';
 
 // Start copyright date;

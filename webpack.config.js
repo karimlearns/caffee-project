@@ -32,7 +32,10 @@ module.exports = {
                 test: /\.html$/,
                 use: [
                     {
-                        loader: 'html-loader'
+                        loader: 'html-loader',
+                        options: {
+                            minimize: true,
+                        },
                     }
                 ]
             },
@@ -48,8 +51,8 @@ module.exports = {
 
             {
                 test: /\.(svg|eot|woff|woff2|ttf)$/i,
+                type: 'asset/resource',
                 exclude: /images/,
-                // type: 'asset/resource',
                 generator: {
                     filename: "./fonts/[name][ext]"
                 }
@@ -57,8 +60,8 @@ module.exports = {
 
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
                 exclude: /fonts/,
-                // type: 'asset/resource',
                 generator: {
                     filename: "./images/[name][ext]"
                 }
@@ -73,11 +76,10 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
 
-        new CssMinimizerPlugin({}),
-
         new MiniCssExtractPlugin({
             filename: "assets/css/style.css"
         }),
+
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './src/index.html',
@@ -115,6 +117,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'services.html',
             template: './src/services.html',
-        })
-    ]
+        }),
+
+        new CssMinimizerPlugin({})
+    ],
 }
