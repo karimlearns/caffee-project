@@ -1,1 +1,0 @@
-"use strict";self.webpackHotUpdatecafe_project("app",{},(function(c){c.h=()=>"cc5d27503d56d7eb72a5"}));
